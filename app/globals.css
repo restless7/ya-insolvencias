@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto+Slab:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 40% 10%;
+    --primary: 161 100% 33%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 100% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 150 30% 96%;
+    --muted-foreground: 215 20% 40%;
+    --accent: 25 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --border: 150 20% 88%;
+    --input: 150 20% 88%;
+    --ring: 161 100% 33%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-family: "Roboto Slab", Georgia, serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", system-ui, sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient-esmeralda {
+    background: linear-gradient(135deg, #00a676, #5eeabe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-marino {
+    background: linear-gradient(135deg, #003366, #2a59ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-alt {
+    background-color: #f0faf5;
+  }
+
+  .cta-glow {
+    box-shadow: 0 0 24px rgba(0, 166, 118, 0.5);
+  }
+
+  .cta-glow:hover {
+    box-shadow: 0 0 40px rgba(0, 166, 118, 0.75);
+  }
+}

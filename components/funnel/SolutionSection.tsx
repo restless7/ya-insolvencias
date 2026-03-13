@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { FloatingWallet, FloatingHandsCoins } from "@/components/funnel/FloatingDecorations";
 
 const benefits = [
     {
@@ -57,8 +58,13 @@ const steps = [
 
 export function SolutionSection() {
     return (
-        <section id="solucion" className="py-24 section-alt">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="solucion" className="py-24 section-alt relative overflow-hidden">
+            {/* Floating decorations — hover-sensitive, desktop only */}
+            <FloatingWallet position="top-20 -right-4 xl:right-8" size={140} opacity={8} delay={0.5} />
+            <FloatingWallet position="bottom-32 -left-4 xl:left-6" size={100} opacity={6} delay={1} flip />
+            <FloatingHandsCoins position="top-1/3 -left-6 xl:left-4" size={160} opacity={10} delay={0.8} />
+
+            <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 24 }}

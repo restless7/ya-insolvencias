@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRightIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const badges = [
     "✓ Consulta 100% gratuita",
@@ -46,8 +47,22 @@ export function UrgencyCTASection() {
     return (
         <section
             id="contacto"
-            className="py-24 section-alt relative overflow-hidden"
+            className="py-24 relative overflow-hidden"
         >
+            {/* Background image */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/images/banner4.jpeg"
+                    alt=""
+                    fill
+                    className="object-cover"
+                    sizes="100vw"
+                    quality={85}
+                />
+                {/* Dark overlay for text readability */}
+                <div className="absolute inset-0 bg-gradient-to-br from-marino-950/85 via-marino-900/80 to-esmeralda-950/75" />
+            </div>
+
             {/* Decorative orbs */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-esmeralda-500 rounded-full opacity-10 blur-3xl pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-naranja-500 rounded-full opacity-10 blur-3xl pointer-events-none" />
@@ -61,17 +76,17 @@ export function UrgencyCTASection() {
                     transition={{ duration: 0.7 }}
                     className="text-center mb-14"
                 >
-                    <span className="inline-block bg-naranja-500/20 border border-naranja-500/40 text-naranja-300 font-heading text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 animate-pulse-orange">
+                    <span className="inline-block bg-naranja-500/30 border border-naranja-400/50 text-naranja-300 font-heading text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 animate-pulse-orange">
                         🔥 Cupos limitados esta semana
                     </span>
-                    <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-marino-900 mb-4">
+                    <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">
                         Tu reinicio empieza{" "}
                         <span className="text-esmeralda-500">hoy. Ya.</span>
                     </h2>
-                    <p className="font-body text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="font-body text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
                         Cada día que pasa, los intereses crecen y los cobros no paran. Da
                         el primer paso ahora — es{" "}
-                        <strong className="text-marino-900">gratis y sin compromiso.</strong>
+                        <strong className="text-white">gratis y sin compromiso.</strong>
                     </p>
                 </motion.div>
 
@@ -84,7 +99,7 @@ export function UrgencyCTASection() {
                         transition={{ duration: 0.7 }}
                         className="space-y-5"
                     >
-                        <h3 className="font-heading text-xl font-bold text-marino-900 mb-6">
+                        <h3 className="font-heading text-xl font-bold text-white mb-6">
                             Lo que recibes cuando escribes:
                         </h3>
                         {badges.map((badge, i) => (
@@ -92,17 +107,17 @@ export function UrgencyCTASection() {
                                 <div className="w-8 h-8 rounded-full bg-esmeralda-100 border border-esmeralda-200 flex items-center justify-center flex-shrink-0">
                                     <CheckCircleIcon className="w-4 h-4 text-esmeralda-600" />
                                 </div>
-                                <span className="font-body text-slate-700 text-base">{badge}</span>
+                                <span className="font-body text-white/80 text-base">{badge}</span>
                             </div>
                         ))}
 
-                        <div className="mt-8 p-5 bg-white border border-slate-200 shadow-sm rounded-2xl">
-                            <p className="font-body text-slate-600 text-sm italic leading-relaxed">
+                        <div className="mt-8 p-5 bg-white/10 border border-white/20 shadow-sm rounded-2xl backdrop-blur-sm">
+                            <p className="font-body text-white/70 text-sm italic leading-relaxed">
                                 &ldquo;No tenía idea de que tenía este derecho. Gracias a Ya
                                 Insolvencias, pude salvar mi negocio y mi familia volvió a
                                 tener paz.&rdquo;
                             </p>
-                            <p className="font-heading text-marino-800 text-sm font-bold mt-3">
+                            <p className="font-heading text-white/90 text-sm font-bold mt-3">
                                 — Carlos B., comerciante, Medellín
                             </p>
                         </div>

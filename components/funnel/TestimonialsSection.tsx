@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { StarIcon } from "@heroicons/react/24/solid";
+import { FloatingWallet } from "@/components/funnel/FloatingDecorations";
 
 const testimonials = [
     {
@@ -51,7 +52,9 @@ const stats = [
 
 export function TestimonialsSection() {
     return (
-        <section id="testimonios" className="py-24 section-alt">
+        <section id="testimonios" className="py-24 section-alt relative overflow-hidden">
+            {/* Floating decoration */}
+            <FloatingWallet position="top-24 -left-6 xl:left-4" size={90} opacity={5} delay={0.4} flip />
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <motion.div

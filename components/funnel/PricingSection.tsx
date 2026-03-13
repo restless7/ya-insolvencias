@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { FloatingWallet, FloatingHandsCoins } from "@/components/funnel/FloatingDecorations";
 
 const plans = [
     {
@@ -63,7 +64,10 @@ export function PricingSection() {
         document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" });
 
     return (
-        <section id="planes" className="py-24 section-alt">
+        <section id="planes" className="py-24 section-alt relative overflow-hidden">
+            {/* Floating decorations */}
+            <FloatingHandsCoins position="top-20 -right-8 xl:right-2" size={140} opacity={7} delay={0.5} />
+            <FloatingWallet position="bottom-20 -left-6 xl:left-4" size={90} opacity={5} delay={0.8} flip />
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <motion.div

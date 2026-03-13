@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { FloatingWallet, FloatingHandsCoins } from "@/components/funnel/FloatingDecorations";
 
 const painPoints = [
     {
@@ -8,36 +9,36 @@ const painPoints = [
         title: "Tu tranquilidad",
         description:
             "Llamadas de cobranza a toda hora, amenazas legales y noches en vela pensando en cómo salir adelante.",
-        color: "bg-red-50",
-        border: "border-red-200",
-        titleColor: "text-red-900",
+        color: "bg-white/80 backdrop-blur-md",
+        border: "border-esmeralda-200",
+        titleColor: "text-esmeralda-900",
     },
     {
         emoji: "💔",
         title: "Tu familia",
         description:
             "El estrés financiero destruye relaciones. Tu familia lo sufre contigo aunque no digan nada.",
-        color: "bg-rose-50",
-        border: "border-rose-200",
-        titleColor: "text-rose-900",
+        color: "bg-white/80 backdrop-blur-md",
+        border: "border-esmeralda-200",
+        titleColor: "text-esmeralda-900",
     },
     {
         emoji: "🏪",
         title: "Tu negocio",
         description:
             "Embargos, cierres forzados, pérdida de inventario. Tu fuente de ingresos en riesgo constante.",
-        color: "bg-orange-50",
-        border: "border-orange-200",
-        titleColor: "text-orange-900",
+        color: "bg-white/80 backdrop-blur-md",
+        border: "border-esmeralda-200",
+        titleColor: "text-esmeralda-900",
     },
     {
         emoji: "⛓️",
         title: "Tu libertad",
         description:
             "Reportes en centrales de riesgo que te persiguen por años. Sin crédito, sin oportunidades, sin futuro.",
-        color: "bg-slate-100",
-        border: "border-slate-300",
-        titleColor: "text-slate-800",
+        color: "bg-white/80 backdrop-blur-md",
+        border: "border-esmeralda-200",
+        titleColor: "text-esmeralda-900",
     },
 ];
 
@@ -55,8 +56,11 @@ export function ProblemSection() {
     return (
         <section
             id="problema"
-            className="py-24 section-alt"
+            className="py-24 section-alt relative overflow-hidden"
         >
+            {/* Floating decorations */}
+            <FloatingWallet position="top-16 -right-6 xl:right-4" size={100} opacity={6} delay={0.3} />
+            <FloatingHandsCoins position="bottom-24 -left-8 xl:left-2" size={130} opacity={8} delay={0.6} flip />
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <motion.div
@@ -66,12 +70,12 @@ export function ProblemSection() {
                     transition={{ duration: 0.7 }}
                     className="text-center mb-16"
                 >
-                    <span className="inline-block bg-naranja-50 border border-naranja-200 text-naranja-600 font-heading text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+                    <span className="inline-block bg-marino-50 border border-marino-200 text-marino-600 font-heading text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
                         Sabemos lo que estás viviendo
                     </span>
                     <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-marino-900 mb-4">
                         Lo que las deudas{" "}
-                        <span className="text-naranja-500">te están quitando</span>
+                        <span className="text-esmeralda-500">te están quitando</span>
                     </h2>
                     <p className="font-body text-slate-600 text-lg max-w-2xl mx-auto">
                         No eres el único. Cada día, miles de colombianos cargamos el mismo peso.
@@ -117,7 +121,7 @@ export function ProblemSection() {
                     </p>
                     <button
                         onClick={() => document.getElementById("solucion")?.scrollIntoView({ behavior: "smooth" })}
-                        className="font-heading font-bold text-naranja-600 hover:text-naranja-700 text-lg transition-colors duration-200 inline-flex items-center gap-2"
+                        className="font-heading font-bold text-esmeralda-600 hover:text-esmeralda-700 text-lg transition-colors duration-200 inline-flex items-center gap-2"
                     >
                         Pero hay una salida legal →
                     </button>

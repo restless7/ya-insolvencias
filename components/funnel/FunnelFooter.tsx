@@ -52,10 +52,21 @@ export function FunnelFooter() {
 
                     {/* Divider + copyright */}
                     <div className="w-full h-px bg-white/10" />
-                    <p className="font-body text-white/25 text-xs">
-                        © 2026 Ya Insolvencias. Todos los derechos reservados. · Bogotá,
-                        Colombia
-                    </p>
+                    <div className="flex flex-col items-center gap-4">
+                        <p className="font-body text-white/25 text-xs">
+                            © 2026 Ya Insolvencias. Todos los derechos reservados. · Bogotá,
+                            Colombia
+                        </p>
+                        <a
+                            href="https://www.apexaisolutions.dev/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-xs text-white/25 hover:text-white transition-colors duration-300 font-sans"
+                        >
+                            <img src="/images/apex-logo.png" alt="Apex AI Solutions" className="w-4 h-4 object-contain brightness-0 invert opacity-50" />
+                            Powered by Apex AI Solutions
+                        </a>
+                    </div>
                 </motion.div>
             </div>
         </footer>

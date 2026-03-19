@@ -35,12 +35,19 @@ export function HeroSection() {
         <div ref={ref} className="relative" style={{ height: "400vh" }}>
             {/* Image Overlay - sits ABOVE everything, fades out on scroll to reveal content */}
             <motion.div
-                className="fixed inset-0 z-50 bg-cover bg-center pointer-events-none"
-                style={{
-                    backgroundImage: "url('/images/hero-section.jpeg')",
-                    opacity: imageOpacity,
-                }}
-            />
+                className="fixed inset-0 z-50 pointer-events-none bg-[#f0faf5]"
+                style={{ opacity: imageOpacity }}
+            >
+                <Image
+                    src="/images/hero-section.jpeg"
+                    alt=""
+                    fill
+                    className="object-contain md:object-cover object-center"
+                    sizes="100vw"
+                    priority
+                    quality={80}
+                />
+            </motion.div>
 
             {/* Sticky hero content stays pinned while user scrolls through the 200vh container */}
             <section

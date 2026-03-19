@@ -55,13 +55,11 @@ export function FunnelNavbar() {
                         />
                         
                         <div className="hidden lg:flex items-center transition-transform hover:scale-105 duration-300">
-                            <Image 
-                                src="/images/Flag_of_Santander_Department.png" 
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img 
+                                src="/images/flag-santander.png" 
                                 alt="Bandera de Santander" 
-                                width={360} 
-                                height={120} 
                                 className="h-20 xl:h-24 w-auto object-contain drop-shadow-sm rounded"
-                                priority
                             />
                         </div>
                     </div>

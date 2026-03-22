@@ -20,6 +20,7 @@ export default function RootLayout({
         <html lang="es">
             <head>
                 <meta name="robots" content="noindex, nofollow" />
+                <link rel="icon" href="/images/wallet.ico" />
             </head>
             <body className="antialiased">{children}</body>
         </html>

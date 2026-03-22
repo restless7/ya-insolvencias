@@ -4,7 +4,6 @@ import { ProblemSection } from "@/components/funnel/ProblemSection";
 import { SolutionSection } from "@/components/funnel/SolutionSection";
 import { TestimonialsSection } from "@/components/funnel/TestimonialsSection";
 import { FAQSection } from "@/components/funnel/FAQSection";
-import { PricingSection } from "@/components/funnel/PricingSection";
 import { UrgencyCTASection } from "@/components/funnel/UrgencyCTASection";
 import { FunnelFooter } from "@/components/funnel/FunnelFooter";
 import { WhatsAppFAB } from "@/components/funnel/WhatsAppFAB";
@@ -61,9 +60,6 @@ export default function FunnelYaInsolvencias() {
 
                 {/* S5 — FAQ: Objection handling */}
                 <FAQSection />
-
-                {/* S6 — Pricing: Commitment ladder */}
-                <PricingSection />
 
                 {/* S7 — Urgency CTA: Lead capture form */}
                 <UrgencyCTASection />

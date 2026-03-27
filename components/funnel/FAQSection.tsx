@@ -29,7 +29,7 @@ const faqs = [
     {
         question: "¿Es seguro y completamente legal?",
         answer:
-            "100% legal y regulado. Está contemplado en la Ley 2445 de 2025 y por el Código General del Proceso)",
+            "100% legal y regulado. Está contemplado en la Ley 2445 de 2025 y por el Código General del Proceso",
     },
 ];
 

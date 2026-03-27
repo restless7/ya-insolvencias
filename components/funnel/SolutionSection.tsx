@@ -175,7 +175,7 @@ export function SolutionSection() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-esmeralda-500 hover:bg-esmeralda-400 text-white font-heading font-bold text-lg px-8 py-4 rounded-xl cta-glow transition-all duration-300"
                     >
-                        Estudio de caso y diagnostico = Gratis
+                        Estudio de caso y diagnostico Gratis
                         <ArrowRightIcon className="w-5 h-5" />
                     </a>
                     <p className="font-body text-slate-400 text-sm mt-3">

@@ -42,7 +42,7 @@ export function FunnelFooter() {
 
                     {/* Legal */}
                     <p className="font-body text-white/40 text-xs max-w-2xl leading-relaxed">
-                        Regulados por la <strong className="text-white/60">Ley 2445 de 2025</strong> y por el Código General del Proceso. Ya Insolvencias no es un banco ni entidad financiera. Presta servicios de asesoría jurídica y representacion judicial en procesos de insolvencia de persona natural.
+                        Regulados por la <strong className="text-white/60">Ley 2445 de 2025</strong> y por el Código General del Proceso. Ya Insolvencias no es un banco ni entidad financiera. Presta servicios de asesoría jurídica y representacion judicial en procesos de insolvencia.
                     </p>
 
                     {/* Contact Links */}

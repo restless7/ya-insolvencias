@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
     title: "Ya Insolvencias — Reinicia tu vida financiera",
     description:
-        "Asesoría en procesos de insolvencia para colombianos. Consulta gratuita. Regulados por la Ley 1564 de 2012.",
+        "Asesoría en procesos de insolvencia para colombianos. Consulta gratuita. Regulados por la Ley 2445 de 2025.",
     robots: {
         index: false,
         follow: false,

@@ -118,14 +118,14 @@ export function ProblemSection() {
                     <p className="font-body text-slate-500 text-sm uppercase tracking-widest mb-3 font-semibold">
                         ¿Y si todo esto pudiera terminar?
                     </p>
-                    <motion.button
-                        onClick={() => document.getElementById("solucion")?.scrollIntoView({ behavior: "smooth" })}
-                        whileHover={{ scale: 1.05, x: 4 }}
-                        whileTap={{ scale: 0.97 }}
+                    <a
+                        href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="font-heading font-bold text-esmeralda-600 hover:text-esmeralda-700 text-lg transition-colors duration-200 inline-flex items-center gap-2"
                     >
                         Pero hay una salida legal →
-                    </motion.button>
+                    </a>
                 </motion.div>
             </div>
         </section>

@@ -165,7 +165,7 @@ export function PricingSection() {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="text-center font-body text-slate-400 text-sm mt-10"
                 >
-                    ✓ Sin costos ocultos · ✓ Sin letra pequeña · ✓ Proceso 100% legal Ley 1564 de 2012
+                    ✓ Sin costos ocultos · ✓ Sin letra pequeña · ✓ Proceso 100% legal Ley 2445 de 2025
                 </motion.p>
             </div>
         </section>

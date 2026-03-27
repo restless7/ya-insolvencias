@@ -29,7 +29,7 @@ export function FunnelFooter() {
                     {/* Legal */}
                     <p className="font-body text-white/40 text-xs max-w-xl leading-relaxed">
                         Regulados por la{" "}
-                        <strong className="text-white/60">Ley 1564 de 2012</strong> (Código
+                        <strong className="text-white/60">Ley 2445 de 2025</strong> (Código
                         General del Proceso). Conciliadores autorizados por el{" "}
                         <strong className="text-white/60">
                             Ministerio de Justicia de Colombia.

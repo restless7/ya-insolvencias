@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { FloatingWallet, FloatingHandsCoins } from "@/components/funnel/FloatingDecorations";
@@ -64,6 +65,18 @@ export function SolutionSection() {
             <FloatingWallet position="bottom-32 -left-4 xl:left-6" size={100} opacity={6} delay={1} flip />
             <FloatingHandsCoins position="top-1/3 -left-6 xl:left-4" size={160} opacity={10} delay={0.8} />
 
+            {/* Background image — Palacio-1 */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/images/palacio-1.jpeg"
+                    alt=""
+                    fill
+                    className="object-cover opacity-20 pointer-events-none"
+                    sizes="100vw"
+                    quality={85}
+                />
+            </div>
+
             <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <motion.div
@@ -83,7 +96,7 @@ export function SolutionSection() {
                     <p className="font-body text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
                         No es una vergüenza. Es una herramienta legal diseñada para
                         protegerte. Regulada por la{" "}
-                        <strong className="text-marino-900">Ley 1564 de 2012</strong>, está
+                        <strong className="text-marino-900">Ley 2445 de 2025</strong>, está
                         al alcance de cualquier colombiano.
                     </p>
                 </motion.div>
@@ -156,13 +169,15 @@ export function SolutionSection() {
                     transition={{ duration: 0.6 }}
                     className="text-center"
                 >
-                    <button
-                        onClick={() => document.getElementById("contacto")?.scrollIntoView({ behavior: "smooth" })}
+                    <a
+                        href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-esmeralda-500 hover:bg-esmeralda-400 text-white font-heading font-bold text-lg px-8 py-4 rounded-xl cta-glow transition-all duration-300"
                     >
-                        Descubre si calificas — es gratis
+                        Estudio de caso y diagnostico = Gratis
                         <ArrowRightIcon className="w-5 h-5" />
-                    </button>
+                    </a>
                     <p className="font-body text-slate-400 text-sm mt-3">
                         Sin compromiso. Respuesta en menos de 24 horas.
                     </p>

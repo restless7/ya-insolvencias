@@ -76,17 +76,22 @@ export function UrgencyCTASection() {
                     transition={{ duration: 0.7 }}
                     className="text-center mb-14"
                 >
-                    <span className="inline-block bg-naranja-500/30 border border-naranja-400/50 text-naranja-300 font-heading text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 animate-pulse-orange">
-                        🔥 Cupos limitados esta semana
-                    </span>
                     <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4">
                         Tu reinicio empieza{" "}
                         <span className="text-esmeralda-500">hoy. Ya.</span>
                     </h2>
                     <p className="font-body text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
                         Cada día que pasa, los intereses crecen y los cobros no paran. Da
-                        el primer paso ahora — es{" "}
-                        <strong className="text-white">gratis y sin compromiso.</strong>
+                        el primer paso ahora — consulta{" "}
+                        <strong className="text-white text-xl">GRATIS</strong> al:{" "}
+                        <a 
+                            href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-esmeralda-500 hover:bg-esmeralda-400 text-white px-3 py-1 rounded-lg transition-colors duration-200"
+                        >
+                            315 095 2931
+                        </a>
                     </p>
                 </motion.div>
 
@@ -213,20 +218,15 @@ export function UrgencyCTASection() {
                                     />
                                 </div>
 
-                                <button
-                                    type="submit"
-                                    disabled={loading}
-                                    className="w-full inline-flex items-center justify-center gap-2 bg-esmeralda-500 hover:bg-esmeralda-400 disabled:opacity-60 disabled:cursor-not-allowed text-white font-heading font-bold text-lg py-4 px-6 rounded-xl cta-glow transition-all duration-300"
+                                <a
+                                    href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full inline-flex items-center justify-center gap-2 bg-esmeralda-500 hover:bg-esmeralda-400 text-white font-heading font-bold text-lg py-4 px-6 rounded-xl cta-glow transition-all duration-300"
                                 >
-                                    {loading ? (
-                                        <span className="animate-spin w-5 h-5 border-2 border-white/40 border-t-white rounded-full" />
-                                    ) : (
-                                        <>
-                                            Quiero mi consulta gratis
-                                            <ArrowRightIcon className="w-5 h-5" />
-                                        </>
-                                    )}
-                                </button>
+                                    Quiero mi consulta gratis por WhatsApp
+                                    <ArrowRightIcon className="w-5 h-5" />
+                                </a>
 
                                 <p className="text-center font-body text-slate-500 text-xs">
                                     Al enviar, aceptas que un asesor te contacte. No spam.

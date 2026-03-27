@@ -11,7 +11,7 @@ export function WhatsAppFAB() {
             className="fixed bottom-6 right-6 z-50"
         >
             <motion.a
-                href="https://wa.me/57XXXXXXXXXX?text=Hola,%20quiero%20información%20sobre%20el%20proceso%20de%20insolvencia"
+                href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 animate={{ scale: [1, 1.08, 1] }}

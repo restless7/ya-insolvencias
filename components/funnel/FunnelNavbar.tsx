@@ -113,8 +113,10 @@ export function FunnelNavbar() {
                     </div>
                     
                     <div className="flex items-center gap-4">
-                        <button
-                            onClick={scrollToForm}
+                        <a
+                            href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className={`group relative overflow-hidden inline-flex items-center justify-center gap-3 font-heading font-bold text-sm sm:text-base px-6 sm:px-8 py-3 rounded-full transition-all duration-300 ${
                                 scrolled
                                     ? "bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-lg shadow-[#25D366]/30"
@@ -140,7 +142,7 @@ export function FunnelNavbar() {
                                 </span>
                                 <span className="text-base sm:hidden">🌎</span>
                             </span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -29,6 +29,13 @@ export default function FunnelYaInsolvencias() {
                 {/* S1 — Hero: Curiosity hook + pain validation */}
                 <HeroSection />
 
+                {/* Visual break — Palacio-3 */}
+                <ImageBannerStrip
+                    src="/images/palacio-3.jpeg"
+                    alt="Respaldo legal y profesional"
+                    height="h-64 sm:h-80 md:h-[28rem]"
+                />
+
                 {/* S2 — Problem: Empathy + pain amplification */}
                 <ProblemSection />
 
@@ -63,6 +70,13 @@ export default function FunnelYaInsolvencias() {
 
                 {/* S7 — Urgency CTA: Lead capture form */}
                 <UrgencyCTASection />
+
+                {/* Visual break — Palacio-2 */}
+                <ImageBannerStrip
+                    src="/images/palacio-2.jpeg"
+                    alt="Servicios jurídicos de alta calidad"
+                    height="h-64 sm:h-80 md:h-[28rem]"
+                />
 
                 {/* S8 — Footer: Trust seal */}
                 <FunnelFooter />

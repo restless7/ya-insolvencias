@@ -122,24 +122,6 @@ export function TestimonialsSection() {
                         </motion.div>
                     ))}
                 </div>
-
-                {/* Stats ribbon */}
-                <motion.div
-                    initial={{ opacity: 0, y: 24 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 0.7 }}
-                    className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-marino-900 rounded-2xl p-8"
-                >
-                    {stats.map((stat, i) => (
-                        <div key={i} className="text-center">
-                            <p className="font-heading text-3xl font-black text-esmeralda-400 mb-1">
-                                {stat.value}
-                            </p>
-                            <p className="font-body text-white/60 text-sm">{stat.label}</p>
-                        </div>
-                    ))}
-                </motion.div>
             </div>
         </section>
     );

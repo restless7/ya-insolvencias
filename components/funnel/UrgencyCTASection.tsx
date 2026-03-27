@@ -91,6 +91,13 @@ export function UrgencyCTASection() {
                             className="bg-esmeralda-500 hover:bg-esmeralda-400 text-white px-3 py-1 rounded-lg transition-colors duration-200"
                         >
                             315 095 2931
+                        </a>{" "}
+                        o escríbenos a:{" "}
+                        <a 
+                            href="mailto:yainsolvencias@gmail.com"
+                            className="text-white hover:text-esmeralda-400 font-bold transition-colors duration-200"
+                        >
+                            yainsolvencias@gmail.com
                         </a>
                     </p>
                 </motion.div>

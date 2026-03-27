@@ -16,6 +16,13 @@ const InstagramIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
+const EmailIcon = ({ className }: { className?: string }) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+    </svg>
+);
+
 export function FunnelFooter() {
     return (
         <footer className="bg-marino-950 py-10">
@@ -65,6 +72,14 @@ export function FunnelFooter() {
                         >
                             <InstagramIcon className="w-5 h-5 text-white/80" />
                             Instagram: @yainsolvencias
+                        </a>
+
+                        <a
+                            href="mailto:yainsolvencias@gmail.com"
+                            className="inline-flex items-center gap-2 text-white/60 hover:text-white font-heading text-sm font-semibold transition-colors duration-200"
+                        >
+                            <EmailIcon className="w-5 h-5 text-white/80" />
+                            Email: yainsolvencias@gmail.com
                         </a>
                     </div>
 

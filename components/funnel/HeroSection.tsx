@@ -6,8 +6,16 @@ import { ArrowRightIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { FloatingWallet } from "@/components/funnel/FloatingDecorations";
 
+const calculateDynamicFamilies = () => {
+    const startDate = new Date("2024-01-01"); // Reference start date
+    const today = new Date();
+    const diffTime = Math.abs(today.getTime() - startDate.getTime());
+    const diffWeeks = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 7));
+    return 200 + diffWeeks * 2;
+};
+
 const stats = [
-    { value: "1.200+", label: "Familias libres de deudas" },
+    { value: `${calculateDynamicFamilies().toLocaleString()}+`, label: "Familias libres de deudas" },
     { value: "98%", label: "Casos exitosos" },
     { value: "100%", label: "Consulta gratuita" },
 ];

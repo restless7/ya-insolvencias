@@ -39,16 +39,28 @@ export function FunnelFooter() {
                         natural.
                     </p>
 
-                    {/* WhatsApp */}
-                    <a
-                        href="https://wa.me/57XXXXXXXXXX?text=Hola,%20quiero%20información%20sobre%20insolvencia"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-esmeralda-400 hover:text-esmeralda-300 font-heading text-sm font-semibold transition-colors duration-200"
-                    >
-                        <span className="text-lg">💬</span>
-                        WhatsApp: +57 (XXX) XXX-XXXX
-                    </a>
+                    {/* Contact Links */}
+                    <div className="flex flex-col sm:flex-row items-center gap-6">
+                        <a
+                            href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-esmeralda-400 hover:text-esmeralda-300 font-heading text-sm font-semibold transition-colors duration-200"
+                        >
+                            <span className="text-lg">💬</span>
+                            WhatsApp: +57 315 095 2931
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/yainsolvencias/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-white/60 hover:text-white font-heading text-sm font-semibold transition-colors duration-200"
+                        >
+                            <span className="text-lg">📸</span>
+                            Instagram: @yainsolvencias
+                        </a>
+                    </div>
 
                     {/* Divider + copyright */}
                     <div className="w-full h-px bg-white/10" />

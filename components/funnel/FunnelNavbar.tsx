@@ -59,6 +59,14 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
     </svg>
 );
 
+const InstagramIcon = ({ className }: { className?: string }) => (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+    </svg>
+);
+
 export function FunnelNavbar() {
     const { scrollY } = useScroll();
     const [hidden, setHidden] = useState(false);
@@ -112,7 +120,21 @@ export function FunnelNavbar() {
                         </div>
                     </div>
                     
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3 sm:gap-4">
+                        <a
+                            href="https://www.instagram.com/yainsolvencias/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`p-2.5 rounded-full transition-all duration-300 border ${
+                                scrolled 
+                                    ? "text-slate-600 hover:text-marino-900 border-slate-200 hover:border-slate-300 bg-slate-50" 
+                                    : "text-white/80 hover:text-white border-white/20 hover:border-white/40 bg-white/10 backdrop-blur-sm"
+                            }`}
+                            aria-label="Instagram"
+                        >
+                            <InstagramIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+                        </a>
+
                         <a
                             href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
                             target="_blank"

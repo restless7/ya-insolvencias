@@ -17,12 +17,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="es">
+        <html lang="es" style={{ colorScheme: "light" }}>
             <head>
                 <meta name="robots" content="noindex, nofollow" />
                 <link rel="icon" href="/images/wallet.ico" />
             </head>
-            <body className="antialiased">{children}</body>
+            <body className="antialiased bg-white text-slate-900">{children}</body>
         </html>
     );
 }

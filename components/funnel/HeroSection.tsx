@@ -23,7 +23,7 @@ const stats = [
 export function HeroSection() {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-    
+
     // Overlay fades out during the first quarter of the scroll container
     const imageOpacity = useTransform(scrollYProgress, [0, 0.25], [1, 0]);
 
@@ -106,7 +106,7 @@ export function HeroSection() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="font-body text-lg sm:text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed text-justify"
                     >
-                        La Ley 2245 de 2025 que modifica y regula los procesos de insolvencia de las personas comerciantes y no comerciantes, otorga múltiples beneficios a los colombianos y nos fortalece como negociadores con un número amplio de herramientas para lograr una negociación altamente favorable para nuestros representados.
+                        La Ley 2445 de 2025 que modifica y regula los procesos de insolvencia de las personas comerciantes y no comerciantes, otorga múltiples beneficios a los colombianos y nos fortalece como negociadores con un número amplio de herramientas para lograr una negociación altamente favorable para nuestros representados.
                     </motion.p>
 
                     {/* CTA Buttons */}

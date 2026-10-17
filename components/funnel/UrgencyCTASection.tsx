@@ -85,12 +85,12 @@ export function UrgencyCTASection() {
                         el primer paso ahora — consulta{" "}
                         <strong className="text-white text-xl">GRATIS</strong> al:{" "}
                         <a 
-                            href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                            href="https://wa.me/573018935514?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-esmeralda-500 hover:bg-esmeralda-400 text-white px-3 py-1 rounded-lg transition-colors duration-200"
                         >
-                            315 095 2931
+                            301 893 5514
                         </a>{" "}
                         o escríbenos a:{" "}
                         <a 
@@ -226,7 +226,7 @@ export function UrgencyCTASection() {
                                 </div>
 
                                 <a
-                                    href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                                    href="https://wa.me/573018935514?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="w-full inline-flex items-center justify-center gap-2 bg-esmeralda-500 hover:bg-esmeralda-400 text-white font-heading font-bold text-lg py-4 px-6 rounded-xl cta-glow transition-all duration-300"

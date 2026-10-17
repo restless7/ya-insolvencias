@@ -55,13 +55,13 @@ export function FunnelFooter() {
                     {/* Contact Links */}
                     <div className="flex flex-col sm:flex-row items-center gap-6">
                         <a
-                            href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                            href="https://wa.me/573018935514?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 text-esmeralda-400 hover:text-esmeralda-300 font-heading text-sm font-semibold transition-colors duration-200"
                         >
                             <WhatsAppIcon className="w-5 h-5 text-[#25D366]" />
-                            WhatsApp: +57 315 095 2931
+                            WhatsApp: +57 301 893 5514
                         </a>
 
                         <a

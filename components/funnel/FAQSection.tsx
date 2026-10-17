@@ -139,7 +139,7 @@ export function FAQSection() {
                         ¿Tienes otra pregunta? Te respondemos en minutos.
                     </p>
                     <a
-                        href="https://wa.me/57XXXXXXXXXX?text=Hola,%20quiero%20información%20sobre%20el%20proceso%20de%20insolvencia"
+                        href="https://wa.me/573018935514?text=Hola,%20quiero%20información%20sobre%20el%20proceso%20de%20insolvencia"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="font-heading font-bold text-naranja-500 hover:text-naranja-400 transition-colors duration-200 inline-flex items-center gap-1.5"

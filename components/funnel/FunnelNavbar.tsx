@@ -136,7 +136,7 @@ export function FunnelNavbar() {
                         </a>
 
                         <a
-                            href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                            href="https://wa.me/573018935514?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={`group relative overflow-hidden inline-flex items-center justify-center gap-3 font-heading font-bold text-sm sm:text-base px-6 sm:px-8 py-3 rounded-full transition-all duration-300 ${

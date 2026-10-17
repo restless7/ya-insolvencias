@@ -119,7 +119,7 @@ export function ProblemSection() {
                         ¿Y si todo esto pudiera terminar?
                     </p>
                     <a
-                        href="https://wa.me/573150952931?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
+                        href="https://wa.me/573018935514?text=Hola%2C%20quiero%20reservar%20un%20espacio%20para%20una%20consulta.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%3F"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="font-heading font-bold text-esmeralda-600 hover:text-esmeralda-700 text-lg transition-colors duration-200 inline-flex items-center gap-2"
